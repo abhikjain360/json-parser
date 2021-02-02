@@ -29,5 +29,3 @@ pub enum Tokens {
     /// Unexpected token was encountered while lexing.
     Unknown(char),
 }
-
-// TODO: write some tests here.
