@@ -10,14 +10,14 @@ pub enum Tokens {
     Bool(bool),
     /// Null type.
     Null,
+    /// Array of objects.
+    Array(Vec<Tokens>),
     /// Identifier.
     Ident(String),
     /// Left bracket used at the start of a block.
     LParen,
     /// Right bracket used at the end of a block.
     RParen,
-    /// Array of objects.
-    Array(Vec<Tokens>),
     /// Used to denote start of an Array.
     ArrayLParen,
     /// Used to denote end of an Array.
