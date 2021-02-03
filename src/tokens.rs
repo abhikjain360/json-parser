@@ -1,5 +1,6 @@
 /// Tokens used to build Lex the input string.
-pub enum Tokens {
+#[derive(Debug)]
+pub enum Token {
     /// String type.
     Str(String),
     /// Integer type.
@@ -10,8 +11,6 @@ pub enum Tokens {
     Bool(bool),
     /// Null type.
     Null,
-    /// Array of objects.
-    Array(Vec<Tokens>),
     /// Identifier.
     Ident(String),
     /// Left bracket used at the start of a block.
