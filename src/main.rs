@@ -3,9 +3,10 @@
 use std::env;
 use std::fs::File;
 
-mod tokens;
+mod json;
 mod lexer;
 mod parser;
+mod tokens;
 
 fn main() {
     let _json_file =
